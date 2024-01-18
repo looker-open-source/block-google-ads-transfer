@@ -226,7 +226,7 @@
     width: 24
     height: 2
   - title: Clicks Comparison
-    name: Clicks Comparison
+    name: Clicks Comparison2
 
     explore: ad_basic_stats
     type: looker_bar
