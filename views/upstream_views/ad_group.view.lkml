@@ -1,5 +1,5 @@
 view: ad_group {
-  sql_table_name: `@{GOOGLE_ADS_SCHEMA}.AdGroup_@{GOOGLE_ADS_CUSTOMER_ID}`    ;;
+  sql_table_name: `@{GOOGLE_ADS_SCHEMA}.ads_AdGroup_@{GOOGLE_ADS_CUSTOMER_ID}`    ;;
 
 
   dimension_group: _data {
@@ -42,23 +42,23 @@ view: ad_group {
 
   dimension: ad_group_desktop_bid_modifier {
     type: number
-    sql: ${TABLE}.AdGroupDesktopBidModifier ;;
+    sql: ${TABLE}.ad_group_desktop_bid_modifier ;;
   }
 
   dimension: ad_group_id {
     type: number
-    sql: ${TABLE}.AdGroupId ;;
+    sql: ${TABLE}.ad_group_id ;;
   }
 
   dimension: ad_group_mobile_bid_modifier {
     type: number
-    sql: ${TABLE}.AdGroupMobileBidModifier ;;
+    sql: ${TABLE}.ad_group_mobile_bid_modifier ;;
   }
 
   dimension: ad_group_name {
     drill_fields: [keyword.criteria]
     type: string
-    sql: ${TABLE}.AdGroupName ;;
+    sql: ${TABLE}.ad_group_name ;;
     link: {
       label: "View on Google Ads"
       icon_url: "https://www.google.com/s2/favicons?domain=www.ads.google.com"
@@ -69,133 +69,133 @@ view: ad_group {
 
   dimension: ad_group_status {
     type: string
-    sql: ${TABLE}.AdGroupStatus ;;
+    sql: ${TABLE}.ad_group_status ;;
   }
 
   dimension: ad_group_tablet_bid_modifier {
     type: number
-    sql: ${TABLE}.AdGroupTabletBidModifier ;;
+    sql: ${TABLE}.ad_group_tablet_bid_modifier ;;
   }
 
   dimension: ad_group_type {
     type: string
-    sql: ${TABLE}.AdGroupType ;;
+    sql: ${TABLE}.ad_group_type ;;
   }
 
   dimension: ad_rotation_mode {
     type: string
-    sql: ${TABLE}.AdRotationMode ;;
+    sql: ${TABLE}.ad_rotation_mode ;;
   }
 
   dimension: bid_type {
     type: string
-    sql: ${TABLE}.BidType ;;
+    sql: ${TABLE}.bid_type ;;
   }
 
   dimension: bidding_strategy_id {
     type: number
-    sql: ${TABLE}.BiddingStrategyId ;;
+    sql: ${TABLE}.bidding_strategy_id ;;
   }
 
   dimension: bidding_strategy_name {
     type: string
-    sql: ${TABLE}.BiddingStrategyName ;;
+    sql: ${TABLE}.bidding_strategy_name ;;
   }
 
   dimension: bidding_strategy_source {
     type: string
-    sql: ${TABLE}.BiddingStrategySource ;;
+    sql: ${TABLE}.bidding_strategy_source ;;
   }
 
   dimension: bidding_strategy_type {
     type: string
-    sql: ${TABLE}.BiddingStrategyType ;;
+    sql: ${TABLE}.bidding_strategy_type ;;
   }
 
   dimension: campaign_id {
     type: number
-    sql: ${TABLE}.CampaignId ;;
+    sql: ${TABLE}.campaign_id ;;
   }
 
   dimension: content_bid_criterion_type_group {
     type: string
-    sql: ${TABLE}.ContentBidCriterionTypeGroup ;;
+    sql: ${TABLE}.content_bid_criterion_type_group ;;
   }
 
   dimension: cpc_bid {
     type: string
-    sql: ${TABLE}.CpcBid ;;
+    sql: ${TABLE}.cpc_bid ;;
   }
 
   dimension: cpm_bid {
     type: number
     value_format_name: id
-    sql: ${TABLE}.CpmBid ;;
+    sql: ${TABLE}.cpm_bid ;;
   }
 
   dimension: cpm_bid_str {
     type: string
-    sql: ${TABLE}.CpmBidStr ;;
+    sql: ${TABLE}.cpm_bid_str ;;
   }
 
   dimension: cpv_bid {
     type: string
-    sql: ${TABLE}.CpvBid ;;
+    sql: ${TABLE}.cpv_bid ;;
   }
 
   dimension: effective_target_roas {
     type: number
-    sql: ${TABLE}.EffectiveTargetRoas ;;
+    sql: ${TABLE}.effective_target_roas ;;
   }
 
   dimension: effective_target_roas_source {
     type: string
-    sql: ${TABLE}.EffectiveTargetRoasSource ;;
+    sql: ${TABLE}.effective_target_roas_source ;;
   }
 
   dimension: enhanced_cpc_enabled {
     type: yesno
-    sql: ${TABLE}.EnhancedCpcEnabled ;;
+    sql: ${TABLE}.enhanced_cpc_enabled ;;
   }
 
   dimension: enhanced_cpv_enabled {
     type: yesno
-    sql: ${TABLE}.EnhancedCpvEnabled ;;
+    sql: ${TABLE}.enhanced_cpv_enabled ;;
   }
 
   dimension: external_customer_id {
     type: number
-    sql: ${TABLE}.ExternalCustomerId ;;
+    sql: ${TABLE}.customer_id ;;
   }
 
   dimension: label_ids {
     type: string
-    sql: ${TABLE}.LabelIds ;;
+    sql: ${TABLE}.label_ids ;;
   }
 
   dimension: labels {
     type: string
-    sql: ${TABLE}.Labels ;;
+    sql: ${TABLE}.labels ;;
   }
 
   dimension: target_cpa {
     type: number
-    sql: ${TABLE}.TargetCpa ;;
+    sql: ${TABLE}.target_cpa ;;
   }
 
   dimension: target_cpa_bid_source {
     type: string
-    sql: ${TABLE}.TargetCpaBidSource ;;
+    sql: ${TABLE}.target_cpa_bid_source ;;
   }
 
   dimension: tracking_url_template {
     type: string
-    sql: ${TABLE}.TrackingUrlTemplate ;;
+    sql: ${TABLE}.tracking_url_template ;;
   }
 
   dimension: url_custom_parameters {
     type: string
-    sql: ${TABLE}.UrlCustomParameters ;;
+    sql: ${TABLE}.url_custom_parameters ;;
   }
 
   measure: count {
