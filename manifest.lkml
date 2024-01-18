@@ -1,7 +1,7 @@
 # project_name: "block-google-ads-transfer"
 
 constant: CONNECTION_NAME {
-  value: "agregori-test-conn"
+  value: "test-conn"
   export: override_optional
 }
 
@@ -11,6 +11,6 @@ constant: GOOGLE_ADS_SCHEMA {
 }
 
 constant: GOOGLE_ADS_CUSTOMER_ID {
-  value: "4717384083"
+  value: "47173"
   export: override_optional
 }
