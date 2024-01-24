@@ -1,16 +1,16 @@
 # project_name: "block-google-ads-transfer"
 
 constant: CONNECTION_NAME {
-  value: "connection"
+  value: "test-conn"
   export: override_optional
 }
 
 constant: GOOGLE_ADS_SCHEMA {
-  value: "schema"
+  value: "google_ads"
   export: override_optional
 }
 
 constant: GOOGLE_ADS_CUSTOMER_ID {
-  value: "12345"
+  value: "47173"
   export: override_optional
 }

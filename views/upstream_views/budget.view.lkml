@@ -1,5 +1,5 @@
 view: budget {
-  sql_table_name: `@{GOOGLE_ADS_SCHEMA}.Budget_@{GOOGLE_ADS_CUSTOMER_ID}`
+  sql_table_name: `@{GOOGLE_ADS_SCHEMA}.ads_Budget_@{GOOGLE_ADS_CUSTOMER_ID}`
     ;;
 
 dimension: prim_key {
@@ -39,67 +39,67 @@ dimension: prim_key {
 
   dimension: account_descriptive_name {
     type: string
-    sql: ${TABLE}.AccountDescriptiveName ;;
+    sql: ${TABLE}.account_descriptive_name ;;
   }
 
   dimension: amount {
     type: number
-    sql: ${TABLE}.Amount / 1000000.0 ;;
+    sql: ${TABLE}.campaign_budget_amount_micros / 1000000.0 ;;
   }
 
   dimension: budget_id {
     type: number
-    sql: ${TABLE}.BudgetId ;;
+    sql: ${TABLE}.campaign_budget_id;;
   }
 
   dimension: budget_name {
     type: string
-    sql: ${TABLE}.BudgetName ;;
+    sql: ${TABLE}.budget_name ;;
   }
 
   dimension: budget_reference_count {
     type: number
-    sql: ${TABLE}.BudgetReferenceCount ;;
+    sql: ${TABLE}.budget_reference_count ;;
   }
 
   dimension: budget_status {
     type: string
-    sql: ${TABLE}.BudgetStatus ;;
+    sql: ${TABLE}.budget_status ;;
   }
 
   dimension: delivery_method {
     type: string
-    sql: ${TABLE}.DeliveryMethod ;;
+    sql: ${TABLE}.delivery_method ;;
   }
 
   dimension: external_customer_id {
     type: number
-    sql: ${TABLE}.ExternalCustomerId ;;
+    sql: ${TABLE}.customer_id ;;
   }
 
   dimension: has_recommended_budget {
     type: yesno
-    sql: ${TABLE}.HasRecommendedBudget ;;
+    sql: ${TABLE}.has_recommended_budget ;;
   }
 
   dimension: is_budget_explicitly_shared {
     type: yesno
-    sql: ${TABLE}.IsBudgetExplicitlyShared ;;
+    sql: ${TABLE}.is_budget_explicitly_shared ;;
   }
 
   dimension: period {
     type: string
-    sql: ${TABLE}.Period ;;
+    sql: ${TABLE}.period ;;
   }
 
   dimension: recommended_budget_amount {
     type: string
-    sql: ${TABLE}.RecommendedBudgetAmount ;;
+    sql: ${TABLE}.recommended_budget_amount ;;
   }
 
   dimension: total_amount {
     type: string
-    sql: ${TABLE}.TotalAmount ;;
+    sql: ${TABLE}.total_amount ;;
   }
 
   dimension: latest {

@@ -24,7 +24,6 @@ explore: ad_basic_stats {
       ${fact.external_customer_id} = ${last_fact.external_customer_id} AND
       ${fact.campaign_id} = ${last_fact.campaign_id} AND
       ${fact.ad_group_id} = ${last_fact.ad_group_id} AND
-      ${fact.criterion_id} = ${last_fact.criterion_id} AND
       ${fact.creative_id} = ${last_fact.creative_id} AND
       ${fact.date_last_period} = ${last_fact.date_period} AND
       ${fact.date_day_of_period} = ${last_fact.date_day_of_period} ;;
@@ -57,8 +56,7 @@ explore: ad_basic_stats {
     fields: [keyword.criteria,keyword.criteria_destination_url]
     from: keyword
     view_label: "Keyword"
-    sql_on: ${fact.criterion_id} = ${keyword.criterion_id} AND
-            ${fact.ad_group_id} = ${keyword.ad_group_id} AND
+    sql_on: ${fact.ad_group_id} = ${keyword.ad_group_id} AND
             ${fact.campaign_id} = ${keyword.campaign_id} AND
             ${fact.external_customer_id} = ${keyword.external_customer_id} AND
             ${keyword.latest} ;;

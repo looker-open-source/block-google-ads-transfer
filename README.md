@@ -17,10 +17,10 @@
 
 ### Block Info and Requirements
 
-This Block is modeled on the schema brought in by Google [BigQuery Transfer Service for Google Ads](https://cloud.google.com/bigquery-transfer/docs/adwords-transfer). This block does not cover every table in the Google Ads schema, it’s designed to help you begin modeling the complex structure of the BigQuery data transfer for Google Ads.
+This Block is modeled on the schema brought in by Google [BigQuery Transfer Service for Google Ads](https://cloud.google.com/bigquery/docs/google-ads-transformation). This block does not cover every table in the Google Ads schema, it’s designed to help you begin modeling the complex structure of the BigQuery data transfer for Google Ads.
 
 
-The schema documentation for Google Ads can be found in [Google's docs](https://developers.google.com/ads/api/docs/appendix/reports/). This block was developed with [Google Ads API v201809](https://developers.google.com/adwords/api/docs/appendix/reports/all-reports)
+The schema documentation for Google Ads can be found in [Google's docs](https://developers.google.com/google-ads/api/docs/start). This block was developed with [Google Ads API v14](https://developers.google.com/google-ads/api/reference/rpc/v14/overview)
 
 ### Google Ads Raw Data Structure
 
