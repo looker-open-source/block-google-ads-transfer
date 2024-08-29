@@ -1,4 +1,7 @@
 # Google Ads Block
+
+**This is not an officially supported Google product.**
+
 ### What does this Block do for me?
 
 **(1) Combine Multiple Data Sources** - Combine your Google Ads data with data from GA, DoubleClick, Facebook Ads, Salesforce, and more to get a holistic view of all your customer data in one central view (see bottom of this page for instructions).
